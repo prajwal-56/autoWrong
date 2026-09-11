@@ -22,11 +22,13 @@ object WordsDestroyedCounter {
     var sessionCount: Int = 0
         private set
 
+    @JvmStatic
     fun getTotalCount(context: Context): Long {
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         return prefs.getLong(KEY_TOTAL, 0L)
     }
 
+    @JvmStatic
     fun increment(context: Context) {
         sessionCount++
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -34,6 +36,7 @@ object WordsDestroyedCounter {
         prefs.edit().putLong(KEY_TOTAL, current + 1L).apply()
     }
 
+    @JvmStatic
     fun resetSession() {
         sessionCount = 0
     }
