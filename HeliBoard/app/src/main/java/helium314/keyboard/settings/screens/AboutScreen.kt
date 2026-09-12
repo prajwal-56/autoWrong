@@ -53,6 +53,7 @@ fun AboutScreen(
 ) {
     val items = listOf(
         SettingsWithoutKey.APP,
+        SettingsWithoutKey.AUTOWRONG_DEVELOPER,
         SettingsWithoutKey.VERSION,
         SettingsWithoutKey.LICENSE,
         SettingsWithoutKey.HIDDEN_FEATURES,
@@ -75,6 +76,18 @@ fun createAboutSettings(context: Context) = listOf(
             description = it.description,
             onClick = { },
             icon = R.mipmap.ic_launcher_round
+        )
+    },
+    Setting(context, SettingsWithoutKey.AUTOWRONG_DEVELOPER, R.string.autowrong_developer_title, R.string.autowrong_developer_summary) {
+        val ctx = LocalContext.current
+        Preference(
+            name = it.title,
+            description = it.description,
+            onClick = {
+                val intent = Intent(Intent.ACTION_VIEW, "https://github.com/prajwal-56".toUri())
+                ctx.startActivity(intent)
+            },
+            icon = R.drawable.ic_settings_about_github
         )
     },
     Setting(context, SettingsWithoutKey.VERSION, R.string.version) {

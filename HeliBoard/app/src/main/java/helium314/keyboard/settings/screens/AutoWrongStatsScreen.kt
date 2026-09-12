@@ -106,6 +106,15 @@ fun AutoWrongStatsScreen(
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     fontWeight = FontWeight.Light,
                 )
+
+                Spacer(modifier = Modifier.height(36.dp))
+
+                Text(
+                    text = "AutoWrong • Crafted by Prajwal (github.com/prajwal-56)",
+                    style = MaterialTheme.typography.bodySmall,
+                    textAlign = TextAlign.Center,
+                    color = MaterialTheme.colorScheme.outline,
+                )
             }
         }
     }

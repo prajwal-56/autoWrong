@@ -72,6 +72,6 @@
 
     <string name="english_ime_name" translatable="false">AutoWrong</string>
     <!-- App slogan-->
-    <string name="app_slogan" translatable="false">100% FOSS keyboard, based on AOSP.</string>
+    <string name="app_slogan" translatable="false">The Anti-Autocorrect Keyboard. By Prajwal (github.com/prajwal-56).</string>
 
 </resources>

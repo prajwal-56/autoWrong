@@ -135,9 +135,9 @@
     <!-- Summary for option to block potentially offensive words to be shown -->
     <string name="prefs_block_potentially_offensive_summary">Do not suggest potentially offensive words</string>
     <!-- Option to enable auto correction -->
-    <string name="autocorrect">Auto-correction</string>
+    <string name="autocorrect">AutoWrong (Misspell correctly spelled words)</string>
     <!-- Description for auto correction -->
-    <string name="auto_correction_summary">Spacebar and punctuation automatically correct mistyped words</string>
+    <string name="auto_correction_summary">Spacebar and punctuation automatically mangle correctly spelled words and leave typos untouched</string>
     <!-- Option to enable auto correction for many fields that do not request auto correction -->
     <string name="more_autocorrect">More auto-correction</string>
     <!-- Description for more_autocorrect -->
@@ -794,6 +794,9 @@ New dictionary:
     <string name="settings_screen_about">About</string>
     <!-- version for about screen -->
     <string name="version">Version</string>
+    <!-- developer credit for AutoWrong -->
+    <string name="autowrong_developer_title">Created by Prajwal</string>
+    <string name="autowrong_developer_summary">github.com/prajwal-56 • Built for TinkerHub Useless Projects</string>
     <!-- github repo link for about screen -->
     <string name="about_github_link">View on GitHub</string>
     <!-- link to the wiki for about screen -->

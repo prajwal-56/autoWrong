@@ -156,15 +156,17 @@ adb install -r app/build/outputs/apk/debugNoMinify/HeliBoard_4.1-AutoWrong-debug
 | Type "teh" + space | Commits "teh " unchanged (already misspelled) |
 | Type "USA" + space | Commits "USA " unchanged (all-caps acronym, exempt) |
 | Type "it" + space | Commits "it " unchanged (word < 3 chars, exempt) |
+| Press Backspace right after mangled word | Restores the original correctly-spelled word! |
 | Open AutoWrong Settings | Tap "💀 Words Destroyed" to see the stats screen |
 | Stats counter | Should increment each time a valid word is mangled |
 
 ---
 
-## Credits & License
+## Author, Credits & License
 
-- **HeliBoard** by Helium314 and contributors — [GitHub](https://github.com/Helium314/HeliBoard) — GPLv3
-- **AutoWrong modifications** by the autoWrong team — also GPLv3 (as required by the license)
-- Based on AOSP LatinIME and OpenBoard — Apache-2.0
+- **AutoWrong Author**: [Prajwal](https://github.com/prajwal-56)
+- **Built for**: TinkerHub "Useless Projects" make-a-thon
+- **Based on**: [HeliBoard](https://github.com/Helium314/HeliBoard) by Helium314 and contributors (GPLv3)
+- **Upstream lineage**: AOSP LatinIME and OpenBoard (Apache-2.0)
 
-As required by GPLv3: this is a modified version of HeliBoard. Source code for all modifications is available in this repository. All original copyright notices and license files are preserved.
+This project is licensed under the [GNU General Public License v3.0 (GPLv3)](LICENSE). All modifications are documented in this repository in compliance with GPLv3 terms. Original copyright notices and licenses are preserved.
