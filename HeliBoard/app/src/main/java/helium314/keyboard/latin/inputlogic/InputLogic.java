@@ -2386,7 +2386,8 @@ public final class InputLogic {
             } else {
                 wordToCommit = typedWord; // already misspelled — leave it untouched
             }
-            commitChosenWord(settingsValues, wordToCommit, LastComposedWord.COMMIT_TYPE_USER_TYPED_WORD, separatorString);
+            final int commitType = wordIsValid ? LastComposedWord.COMMIT_TYPE_DECIDED_WORD : LastComposedWord.COMMIT_TYPE_USER_TYPED_WORD;
+            commitChosenWord(settingsValues, wordToCommit, commitType, separatorString);
             StatsUtils.onWordCommitUserTyped(typedWord, isBatchMode);
         }
     }
